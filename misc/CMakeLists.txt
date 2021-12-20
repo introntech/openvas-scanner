@@ -72,7 +72,7 @@ execute_process (COMMAND gpgme-config --cflags
   OUTPUT_VARIABLE GPGME_CFLAGS
   OUTPUT_STRIP_TRAILING_WHITESPACE)
 
-set (CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Werror")
+set (CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Werror -Wno-error=deprecated-declarations ")
 
 
 ## Pass-throughs
