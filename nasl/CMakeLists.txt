@@ -134,7 +134,7 @@ endif (SNMP)
 # The "-fno-strict-aliasing" silences warnings caused by macros defined in byteorder.h.
 # Once the warnings have been addressed this flag should be removed.
 set (CMAKE_C_FLAGS              "${CMAKE_C_FLAGS} -Wall -Wextra -fno-strict-aliasing")
-set (CMAKE_C_FLAGS_DEBUG        "${CMAKE_C_FLAGS_DEBUG} -Werror")
+set (CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Werror -Wno-error=deprecated-declarations ")
 
 ## Compile the parser - note that there are (better) CMake macros to achieve
 ## that
